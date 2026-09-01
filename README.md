@@ -1,4 +1,4 @@
-
+<div align="center">
 
 # Mixture-of-Scores: Robust Image-Text Data Valuation via Three Lines of Code
 
@@ -9,6 +9,7 @@ Sitong Wu, Haoru Tan, Yukang Chen, Shaofeng Zhang, Jingyao Li, Bei Yu, Xiaojuan 
 [![Paper](https://img.shields.io/badge/ICCV-2025-blue)](https://openaccess.thecvf.com/content/ICCV2025/papers/Wu_Mixture-of-Scores_Robust_Image-Text_Data_Valuation_via_Three_Lines_of_Code_ICCV_2025_paper.pdf)
 [![Code](https://img.shields.io/badge/GitHub-MoS-black?logo=github)](https://github.com/stonewst/MoS)
 
+</div>
 
 
 ## Introduction
