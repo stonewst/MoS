@@ -1,0 +1,26 @@
+# Shared dependencies for the single `mos` env.
+
+# Install these NOT covered here separately (see installation.md):
+#   1. PyTorch (CUDA build):
+#        pip install torch==2.4.0 torchvision==0.19.0 \
+#            --index-url https://download.pytorch.org/whl/cu121
+#   2. The two swappable scorers (they pin CONFLICTING timm versions,
+#      so they must NOT be installed together):
+#        EVA-CLIP:  pip install "open_clip_torch==3.3.0" "timm>=1.0.17"
+#        BLIP2:     pip install "salesforce-lavis==1.0.2" "timm==0.4.12"
+#   3. BLIP uses the official repo (cloned, not pip):
+#        git clone https://github.com/salesforce/BLIP.git
+
+# --- keep these pinned for the whole pipeline (satisfy all four scorers) ---
+numpy<2
+transformers==4.26.1
+
+# --- data preparation ---
+img2dataset==1.47.0
+pandas==2.3.3
+pyarrow==25.0.1
+
+# --- baseline scoring (shared) ---
+ftfy==6.3.1
+fairscale==0.4.13
+git+https://github.com/openai/CLIP.git
